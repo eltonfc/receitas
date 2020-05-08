@@ -1,0 +1,39 @@
+\documentclass[a4paper]{recipe}
+
+\usepackage{tgpagella,newpxmath}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+
+\usepackage{SIunits}
+\usepackage{nicefrac}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{makeidx}
+
+\title{\Huge\bf Receitas}
+\author{Compilação: Elton Carvalho}
+\date{Versão: \today}
+
+\renewcommand{\inghead}{\textbf{Ingredientes}:\ }
+
+\makeatletter
+\def\input@path{{tex/}}
+\makeatother
+
+
+\makeindex
+
+\begin{document}
+\frontmatter
+\maketitle
+\section*{Introdução}
+Ble Blu Bla
+
+\tableofcontents
+\mainmatter
+\input{tex/chapters}
+
+\backmatter
+\printindex
+\end{document}
